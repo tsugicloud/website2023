@@ -1,5 +1,9 @@
-<hr />
-<h2>title: Canvas Integration</h2>
+<?php
+require "../../../top.php";
+require "../../../nav.php";
+?>
+<div id="container">
+<h2>Canvas Integration</h2>
 <p>You can view, install, and use TsugiCloud in the EduAppCenter at:</p>
 <pre><code>https://www.eduappcenter.com/apps/1010</code></pre>
 <p><strong>Using TsugiCloud in Canvas</strong></p>
@@ -30,3 +34,5 @@
 <li>Go into a Canvas course, and select &quot;Settings&quot;, &quot;Apps&quot;, &quot;View App Configurations&quot;, and &quot;+ App&quot;.  Under Configuration Type, select &quot;By URL&quot;.  Enter the configuration URL, Key, and Secret and give the tool a name and save the configuration.   The tools in this site will now be avaialable as a searchable course in the the &quot;External Tools&quot; options in the Canvas UI.  </li>
 </ol>
 <p>These tools will appear under Modules, Assignments, and even in the rich text editor when installed in this manner.</p>
+<?php
+require "../../../footer.php";

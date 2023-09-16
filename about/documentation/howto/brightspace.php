@@ -1,5 +1,9 @@
-<hr />
-<h2>title: Brightspace </h2>
+<?php
+require "../../../top.php";
+require "../../../nav.php";
+?>
+<div id="container">
+<h2>Brightspace </h2>
 <p><strong>Using TsugiCloud in Brightspace</strong></p>
 <ol>
 <li>
@@ -12,3 +16,5 @@
 <p>The documentation to install a tool in Brightspace and enabing Content Item support is:</p>
 <p><a href="https://documentation.brightspace.com/EN/le/lti/admin/adding_content_item_messagel_certified_third_party_tool.htm" target="_blank">
 Adding a Content-Item Message certified third-party tool</a>.</p>
+<?php
+require "../../../footer.php";

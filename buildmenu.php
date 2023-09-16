@@ -9,6 +9,7 @@ function buildMenu() {
     $set->setHome('<img src="'.$CFG->apphome.'/logo.png" style="height: 1em;" alt="Tsugu Cloud"/>', $CFG->apphome);
 
     $set->addLeft('App Store', $T.'store');
+    $set->addLeft('Documentation', $R.'about/documentation/howto');
 
     if ( isset($_SESSION['id']) ) {
         $submenu = new \Tsugi\UI\Menu();
@@ -20,6 +21,7 @@ function buildMenu() {
             $submenu->addLink('Google Classroom', $T.'gclass/login');
         }
 
+        $submenu->addLink('FAQ', $R.'about/documentation/faq');
         $submenu->addLink('Privacy', $R.'about/policies/privacy');
         $submenu->addLink('Data Retention', $R.'about/policies/data-retention');
         $submenu->addLink('Service Level Agreement', $R.'about/policies/service-level-agreement');

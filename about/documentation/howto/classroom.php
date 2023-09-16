@@ -1,5 +1,9 @@
-<hr />
-<h2>title: Google Classroom</h2>
+<?php
+require "../../../top.php";
+require "../../../nav.php";
+?>
+<div id="container">
+<h2>Google Classroom</h2>
 <p><strong>Using TsugiCloud in Google Classroom</strong></p>
 <p>It is relatively simple to use TsugiCloud in Google Classroom.</p>
 <ol>
@@ -23,3 +27,5 @@
 <p>If you want to experiment with this, you need two @gmail.com accounts - one to be the teacher and one to be the student.  Simply go to classroom.google.com and create a course on the teacher account and invite your other gmail account to the course.  You can install tools on the teacher account and get graded from the student account.</p>
 <p>You may or may not be able to use Classroom from an &quot;enterprise&quot; Google account.  Your GSuite adminstrator must explicitly allow a domain to use Google Classroom. </p>
 <p><a href="https://www.youtube.com/watch?v=SeAsoA_fJo0" target="_blank">Video Demonstration</a></p>
+<?php
+require "../../../footer.php";

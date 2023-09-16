@@ -1,5 +1,9 @@
-<hr />
-<h2>title: Sakai Integration</h2>
+<?php
+require "../../../top.php";
+require "../../../nav.php";
+?>
+<div id="container">
+<h2>Sakai Integration</h2>
 <p><strong>Using TsugiCloud in Sakai</strong></p>
 <p>There are several different use cases for using TsugiCloud in Sakai.  In all cases you will need a Key and Secret.</p>
 <ol>
@@ -24,3 +28,5 @@
 <p>In Sakai, use the Lessons tool, select &quot;External Tools&quot; and install this as an LTI 1.x tool. Make sure to check the &quot;Supports Content Item&quot; option when installing this URL in Sakai and tick the boxes to allow both the title and url to be changed.</p>
 <p>Then this &quot;TsugiCloud store&quot; will appear in Lessons as a new external tool, when you select the store you will be launched into the picker to choose tools and/or resources to be pulled into Lessons. The key and secret will be inherited from the store to each of the installed tools. In Sakai-12, once the app store is installed, the rerources from this site will also be avilable from within the rich text editor.</p>
 <p><a href="https://www.youtube.com/watch?v=au2_C_2PgIA" target="_blank">Video Demonstration</a></p>
+<?php
+require "../../../footer.php";
