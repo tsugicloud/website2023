@@ -28,7 +28,7 @@ function buildMenu() {
         if ( isset($_COOKIE['adminmenu']) && $_COOKIE['adminmenu'] == "true" ) {
             $submenu->addLink('Administer', $T . 'admin/');
         }
-        $submenu->addLink('Logout', $R.'logout');
+        $submenu->addLink('Logout', $T.'logout');
         if ( isset($_SESSION['avatar']) ) {
             $set->addRight('<img src="'.$_SESSION['avatar'].'" title="'.htmlentities(__('User Profile Menu - Includes logout')).'" style="height: 2em;"/>', $submenu);
             // htmlentities($_SESSION['displayname']), $submenu);
