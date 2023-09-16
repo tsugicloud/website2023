@@ -11,7 +11,15 @@ function buildMenu() {
     $set->addLeft('App Store', $T.'store');
     $set->addLeft('Documentation', $R.'about/documentation/howto');
 
+    $submenu = new \Tsugi\UI\Menu();
+    $submenu->addLink('FAQ', $R.'about/documentation/faq');
+    $submenu->addLink('Privacy', $R.'about/policies/privacy');
+    $submenu->addLink('Data Retention', $R.'about/policies/data-retention');
+    $submenu->addLink('Service Level Agreement', $R.'about/policies/service-level-agreement');
+    $set->addLeft('About', $submenu);
+
     if ( isset($_SESSION['id']) ) {
+
         $submenu = new \Tsugi\UI\Menu();
         $submenu->addLink('Profile', $R.'profile');
         if ( $CFG->providekeys ) {
@@ -21,10 +29,6 @@ function buildMenu() {
             $submenu->addLink('Google Classroom', $T.'gclass/login');
         }
 
-        $submenu->addLink('FAQ', $R.'about/documentation/faq');
-        $submenu->addLink('Privacy', $R.'about/policies/privacy');
-        $submenu->addLink('Data Retention', $R.'about/policies/data-retention');
-        $submenu->addLink('Service Level Agreement', $R.'about/policies/service-level-agreement');
         if ( isset($_COOKIE['adminmenu']) && $_COOKIE['adminmenu'] == "true" ) {
             $submenu->addLink('Administer', $T . 'admin/');
         }
